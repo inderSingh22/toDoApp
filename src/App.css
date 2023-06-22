@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 10px #a3a3a3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-title {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container input[type='text'] {
+  flex: 1;
+  height: 30px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-button {
+  margin-left: 10px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-container input[type='text'] {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* .completed {
+  text-decoration: line-through;
+} */
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-button {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+}
+
+.add-more-button {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
 }
